@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="UnimOs.Service.UnimOsService" CodeBehind="UnimOsService.svc.cs" %>

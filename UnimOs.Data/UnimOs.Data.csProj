@@ -1,0 +1,875 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{62087D15-C938-445F-8B55-5804278422C3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TruongViet.UnimOs.Data</RootNamespace>
+    <AssemblyName>TruongViet.UnimOs.Data</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cDBase.cs" />
+    <Compile Include="cDDM_BoMon.cs" />
+    <Compile Include="cDDM_BoMon_Base.cs">
+      <DependentUpon>cDDM_BoMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_CapKhenThuong.cs" />
+    <Compile Include="cDDM_CapKhenThuong_Base.cs">
+      <DependentUpon>cDDM_CapKhenThuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_ChucDanh.cs" />
+    <Compile Include="cDDM_ChucDanh_Base.cs">
+      <DependentUpon>cDDM_ChucDanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_ChucVu.cs" />
+    <Compile Include="cDDM_ChucVu_Base.cs">
+      <DependentUpon>cDDM_ChucVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_ChuyenNganh.cs" />
+    <Compile Include="cDDM_ChuyenNganh_Base.cs">
+      <DependentUpon>cDDM_ChuyenNganh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_DanhHieuDuocPhongTang.cs" />
+    <Compile Include="cDDM_DanhHieuDuocPhongTang_Base.cs">
+      <DependentUpon>cDDM_DanhHieuDuocPhongTang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_DanToc.cs" />
+    <Compile Include="cDDM_DanToc_Base.cs">
+      <DependentUpon>cDDM_DanToc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_DiaDiem.cs" />
+    <Compile Include="cDDM_DiaDiem_Base.cs">
+      <DependentUpon>cDDM_DiaDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_DoiTuongMienGiam.cs" />
+    <Compile Include="cDDM_DoiTuongMienGiam_Base.cs">
+      <DependentUpon>cDDM_DoiTuongMienGiam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_DoiTuongTroCap.cs" />
+    <Compile Include="cDDM_DoiTuongTroCap_Base.cs">
+      <DependentUpon>cDDM_DoiTuongTroCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_GiayToNhapTruong.cs" />
+    <Compile Include="cDDM_GiayToNhapTruong_Base.cs">
+      <DependentUpon>cDDM_GiayToNhapTruong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_HanhVi.cs" />
+    <Compile Include="cDDM_HanhVi_Base.cs">
+      <DependentUpon>cDDM_HanhVi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_He.cs" />
+    <Compile Include="cDDM_He_Base.cs">
+      <DependentUpon>cDDM_He.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_HinhThucDaoTao.cs" />
+    <Compile Include="cDDM_HinhThucDaoTao_Base.cs">
+      <DependentUpon>cDDM_HinhThucDaoTao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_HinhThucThi.cs" />
+    <Compile Include="cDDM_HinhThucThi_Base.cs">
+      <DependentUpon>cDDM_HinhThucThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_HocHam.cs" />
+    <Compile Include="cDDM_HocHam_Base.cs">
+      <DependentUpon>cDDM_HocHam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_HocVi.cs" />
+    <Compile Include="cDDM_HocVi_Base.cs">
+      <DependentUpon>cDDM_HocVi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_Khoa.cs" />
+    <Compile Include="cDDM_Khoa_Base.cs">
+      <DependentUpon>cDDM_Khoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_KhoaHoc.cs" />
+    <Compile Include="cDDM_KhoaHoc_Base.cs">
+      <DependentUpon>cDDM_KhoaHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_KhoiKienThuc.cs" />
+    <Compile Include="cDDM_KhoiKienThuc_Base.cs">
+      <DependentUpon>cDDM_KhoiKienThuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_LoaiChuyenMon_Base.cs" />
+    <Compile Include="cDDM_LoaiCongViec.cs" />
+    <Compile Include="cDDM_LoaiCongViec_Base.cs">
+      <DependentUpon>cDDM_LoaiCongViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_LoaiKhenThuong.cs" />
+    <Compile Include="cDDM_LoaiKhenThuong_Base.cs">
+      <DependentUpon>cDDM_LoaiKhenThuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_LoaiPhong.cs" />
+    <Compile Include="cDDM_LoaiPhong_Base.cs">
+      <DependentUpon>cDDM_LoaiPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_LoaiQuy.cs" />
+    <Compile Include="cDDM_LoaiQuy_Base.cs">
+      <DependentUpon>cDDM_LoaiQuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_Lop.cs" />
+    <Compile Include="cDDM_Lop_Base.cs">
+      <DependentUpon>cDDM_Lop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_MonHoc.cs" />
+    <Compile Include="cDDM_MonHoc_Base.cs">
+      <DependentUpon>cDDM_MonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_NamHoc.cs" />
+    <Compile Include="cDDM_NamHoc_Base.cs">
+      <DependentUpon>cDDM_NamHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_Nganh.cs" />
+    <Compile Include="cDDM_Nganh_Base.cs">
+      <DependentUpon>cDDM_Nganh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_NgoaiNgu.cs" />
+    <Compile Include="cDDM_NgoaiNgu_Base.cs">
+      <DependentUpon>cDDM_NgoaiNgu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_PhongHoc.cs" />
+    <Compile Include="cDDM_PhongHoc_Base.cs">
+      <DependentUpon>cDDM_PhongHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_QuanHam.cs" />
+    <Compile Include="cDDM_QuanHam_Base.cs">
+      <DependentUpon>cDDM_QuanHam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_QuanHeGiaDinh.cs" />
+    <Compile Include="cDDM_QuanHeGiaDinh_Base.cs">
+      <DependentUpon>cDDM_QuanHeGiaDinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_QuocTich.cs" />
+    <Compile Include="cDDM_QuocTich_Base.cs">
+      <DependentUpon>cDDM_QuocTich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_Tang.cs" />
+    <Compile Include="cDDM_Tang_Base.cs">
+      <DependentUpon>cDDM_Tang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_TinhHuyenXa.cs" />
+    <Compile Include="cDDM_TinhHuyenXa_Base.cs">
+      <DependentUpon>cDDM_TinhHuyenXa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_ToaNha.cs" />
+    <Compile Include="cDDM_ToaNha_Base.cs">
+      <DependentUpon>cDDM_ToaNha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_TonGiao.cs" />
+    <Compile Include="cDDM_TonGiao_Base.cs">
+      <DependentUpon>cDDM_TonGiao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_TrinhDoChuyenMon.cs" />
+    <Compile Include="cDDM_TrinhDoChuyenMon_Base.cs">
+      <DependentUpon>cDDM_TrinhDoChuyenMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_TrinhDoLyLuan.cs" />
+    <Compile Include="cDDM_TrinhDoLyLuan_Base.cs">
+      <DependentUpon>cDDM_TrinhDoLyLuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_TrinhDoQuanLyHanhChinhNhaNuoc.cs" />
+    <Compile Include="cDDM_TrinhDoQuanLyHanhChinhNhaNuoc_Base.cs">
+      <DependentUpon>cDDM_TrinhDoQuanLyHanhChinhNhaNuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_TrinhDo.cs" />
+    <Compile Include="cDDM_TrinhDo_Base.cs">
+      <DependentUpon>cDDM_TrinhDo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_TruongLienKet.cs" />
+    <Compile Include="cDDM_TruongLienKet_Base.cs">
+      <DependentUpon>cDDM_TruongLienKet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_VanBangChungChi.cs" />
+    <Compile Include="cDDM_VanBangChungChi_Base.cs">
+      <DependentUpon>cDDM_VanBangChungChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_XepLoaiChungChi.cs" />
+    <Compile Include="cDDM_XepLoaiChungChi_Base.cs">
+      <DependentUpon>cDDM_XepLoaiChungChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDDM_XepLoaiRenLuyen.cs" />
+    <Compile Include="cDDM_XepLoaiRenLuyen_Base.cs">
+      <DependentUpon>cDDM_XepLoaiRenLuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDGG_CongViecGiaoVien.cs" />
+    <Compile Include="cDGG_CongViecGiaoVien_Base.cs">
+      <DependentUpon>cDGG_CongViecGiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDGG_DinhMucGioDay.cs" />
+    <Compile Include="cDGG_DinhMucGioDay_Base.cs">
+      <DependentUpon>cDGG_DinhMucGioDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDGG_DinhMucTheoChucDanh.cs" />
+    <Compile Include="cDGG_DinhMucTheoChucDanh_Base.cs">
+      <DependentUpon>cDGG_DinhMucTheoChucDanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDGG_GiangDayGiaoVien.cs" />
+    <Compile Include="cDGG_GiangDayGiaoVien_Base.cs">
+      <DependentUpon>cDGG_GiangDayGiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDGG_HeSoLopDongTheoKhoa.cs" />
+    <Compile Include="cDGG_HeSoLopDongTheoKhoa_Base.cs">
+      <DependentUpon>cDGG_HeSoLopDongTheoKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDGG_HeSoTheoTrinhDo.cs" />
+    <Compile Include="cDGG_HeSoTheoTrinhDo_Base.cs">
+      <DependentUpon>cDGG_HeSoTheoTrinhDo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDHT_ChucNang.cs" />
+    <Compile Include="cDHT_ChucNang_Base.cs">
+      <DependentUpon>cDHT_ChucNang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDHT_DongBo.cs" />
+    <Compile Include="cDHT_DongBo_Base.cs">
+      <DependentUpon>cDHT_DongBo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDHT_Log.cs" />
+    <Compile Include="cDHT_Log_Base.cs">
+      <DependentUpon>cDHT_Log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDHT_PhanHe.cs" />
+    <Compile Include="cDHT_PhanHe_Base.cs">
+      <DependentUpon>cDHT_PhanHe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDHT_ThamSoHeThong.cs" />
+    <Compile Include="cDHT_ThamSoHeThong_Base.cs">
+      <DependentUpon>cDHT_ThamSoHeThong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDHT_ThongTinTruong.cs" />
+    <Compile Include="cDHT_ThongTinTruong_Base.cs">
+      <DependentUpon>cDHT_ThongTinTruong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDHT_User.cs" />
+    <Compile Include="cDHT_User_Base.cs">
+      <DependentUpon>cDHT_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDHT_UserGroup.cs" />
+    <Compile Include="cDHT_UserGroup_Base.cs">
+      <DependentUpon>cDHT_UserGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDHT_UserGroup_ChucNang.cs" />
+    <Compile Include="cDHT_UserGroup_ChucNang_Base.cs">
+      <DependentUpon>cDHT_UserGroup_ChucNang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDHT_User_ChucNang.cs" />
+    <Compile Include="cDHT_User_ChucNang_Base.cs">
+      <DependentUpon>cDHT_User_ChucNang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_ChoNhapLaiDiem.cs" />
+    <Compile Include="cDKQHT_ChoNhapLaiDiem_Base.cs">
+      <DependentUpon>cDKQHT_ChoNhapLaiDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_ChoNhapLaiDiem_SinhVien.cs" />
+    <Compile Include="cDKQHT_ChoNhapLaiDiem_SinhVien_Base.cs">
+      <DependentUpon>cDKQHT_ChoNhapLaiDiem_SinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_ChuongTrinhDaoTao.cs" />
+    <Compile Include="cDKQHT_ChuongTrinhDaoTao_Base.cs">
+      <DependentUpon>cDKQHT_ChuongTrinhDaoTao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_CongThucDiem.cs" />
+    <Compile Include="cDKQHT_CongThucDiem_Base.cs">
+      <DependentUpon>cDKQHT_CongThucDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_CongThucDiemToanKhoa.cs" />
+    <Compile Include="cDKQHT_CongThucDiemToanKhoa_Base.cs">
+      <DependentUpon>cDKQHT_CongThucDiemToanKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_CongThucDiem_ThanhPhanDiem.cs" />
+    <Compile Include="cDKQHT_CongThucDiem_ThanhPhanDiem_Base.cs">
+      <DependentUpon>cDKQHT_CongThucDiem_ThanhPhanDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_CTDT_ChiTiet.cs" />
+    <Compile Include="cDKQHT_CTDT_ChiTiet_Base.cs">
+      <DependentUpon>cDKQHT_CTDT_ChiTiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_CTDT_CT_KhoiKienThuc.cs" />
+    <Compile Include="cDKQHT_CTDT_CT_KhoiKienThuc_Base.cs">
+      <DependentUpon>cDKQHT_CTDT_CT_KhoiKienThuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_CT_KhoiKienThuc.cs" />
+    <Compile Include="cDKQHT_CT_KhoiKienThuc_Base.cs">
+      <DependentUpon>cDKQHT_CT_KhoiKienThuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_CTDT_Lop.cs" />
+    <Compile Include="cDKQHT_CTDT_Lop_Base.cs">
+      <DependentUpon>cDKQHT_CTDT_Lop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_DaChuyenDiem.cs" />
+    <Compile Include="cDKQHT_DaChuyenDiem_Base.cs">
+      <DependentUpon>cDKQHT_DaChuyenDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_DangKyHocLai.cs" />
+    <Compile Include="cDKQHT_DangKyHocLai_Base.cs">
+      <DependentUpon>cDKQHT_DangKyHocLai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_DangKyMonChon.cs" />
+    <Compile Include="cDKQHT_DangKyMonChon_Base.cs">
+      <DependentUpon>cDKQHT_DangKyMonChon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_DangKyThiLai.cs" />
+    <Compile Include="cDKQHT_DangKyThiLai_Base.cs">
+      <DependentUpon>cDKQHT_DangKyThiLai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_DangKyThiLaiTotNghiep.cs" />
+    <Compile Include="cDKQHT_DangKyThiLaiTotNghiep_Base.cs">
+      <DependentUpon>cDKQHT_DangKyThiLaiTotNghiep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_DanhSachDuThi.cs" />
+    <Compile Include="cDKQHT_DanhSachDuThi_Base.cs">
+      <DependentUpon>cDKQHT_DanhSachDuThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_DanhSachHocTiep.cs" />
+    <Compile Include="cDKQHT_DanhSachHocTiep_Base.cs">
+      <DependentUpon>cDKQHT_DanhSachHocTiep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_DanhSachKhongThi.cs" />
+    <Compile Include="cDKQHT_DanhSachKhongThi_Base.cs">
+      <DependentUpon>cDKQHT_DanhSachKhongThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_DanhSachKhongThiTotNghiep.cs" />
+    <Compile Include="cDKQHT_DanhSachKhongThiTotNghiep_Base.cs">
+      <DependentUpon>cDKQHT_DanhSachKhongThiTotNghiep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_DanhSachNgungHoc.cs" />
+    <Compile Include="cDKQHT_DanhSachNgungHoc_Base.cs">
+      <DependentUpon>cDKQHT_DanhSachNgungHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_DiemDanh.cs" />
+    <Compile Include="cDKQHT_DiemDanh_Base.cs">
+      <DependentUpon>cDKQHT_DiemDanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_DiemDanh_ChiTiet.cs" />
+    <Compile Include="cDKQHT_DiemDanh_ChiTiet_Base.cs">
+      <DependentUpon>cDKQHT_DiemDanh_ChiTiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_DiemMonThiTotNghiep.cs" />
+    <Compile Include="cDKQHT_DiemMonThiTotNghiep_Base.cs">
+      <DependentUpon>cDKQHT_DiemMonThiTotNghiep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_DiemThanhPhan.cs" />
+    <Compile Include="cDKQHT_DiemThanhPhan_Base.cs">
+      <DependentUpon>cDKQHT_DiemThanhPhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_DiemThi.cs" />
+    <Compile Include="cDKQHT_DiemThi_Base.cs">
+      <DependentUpon>cDKQHT_DiemThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_DiemTongKetHocKy.cs" />
+    <Compile Include="cDKQHT_DiemTongKetHocKy_Base.cs">
+      <DependentUpon>cDKQHT_DiemTongKetHocKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_DiemTongKetMon.cs" />
+    <Compile Include="cDKQHT_DiemTongKetMon_Base.cs">
+      <DependentUpon>cDKQHT_DiemTongKetMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_DiemTongKetToanKhoa.cs" />
+    <Compile Include="cDKQHT_DiemTongKetToanKhoa_Base.cs">
+      <DependentUpon>cDKQHT_DiemTongKetToanKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_HoiDongMon.cs" />
+    <Compile Include="cDKQHT_HoiDongMon_Base.cs">
+      <DependentUpon>cDKQHT_HoiDongMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_HoiDongMon_ChiTiet.cs" />
+    <Compile Include="cDKQHT_HoiDongMon_ChiTiet_Base.cs">
+      <DependentUpon>cDKQHT_HoiDongMon_ChiTiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_HoiDongMon_Diem.cs" />
+    <Compile Include="cDKQHT_HoiDongMon_Diem_Base.cs">
+      <DependentUpon>cDKQHT_HoiDongMon_Diem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_HoiDongMon_SinhVien.cs" />
+    <Compile Include="cDKQHT_HoiDongMon_SinhVien_Base.cs">
+      <DependentUpon>cDKQHT_HoiDongMon_SinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_LopHocLai.cs" />
+    <Compile Include="cDKQHT_LopHocLai_Base.cs">
+      <DependentUpon>cDKQHT_LopHocLai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_MonHoc_CT_KhoiKienThuc.cs" />
+    <Compile Include="cDKQHT_MonHoc_CT_KhoiKienThuc_Base.cs">
+      <DependentUpon>cDKQHT_MonHoc_CT_KhoiKienThuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_MonThiTotNghiep.cs" />
+    <Compile Include="cDKQHT_MonThiTotNghiep_Base.cs">
+      <DependentUpon>cDKQHT_MonThiTotNghiep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_MonThiTotNghiep_Lop.cs" />
+    <Compile Include="cDKQHT_MonThiTotNghiep_Lop_Base.cs">
+      <DependentUpon>cDKQHT_MonThiTotNghiep_Lop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_QuyChe.cs" />
+    <Compile Include="cDKQHT_QuyChe_Base.cs">
+      <DependentUpon>cDKQHT_QuyChe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_QuyChe_ThamSoQuyChe.cs" />
+    <Compile Include="cDKQHT_QuyChe_ThamSoQuyChe_Base.cs">
+      <DependentUpon>cDKQHT_QuyChe_ThamSoQuyChe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_QuyetDinhTotNghiep.cs" />
+    <Compile Include="cDKQHT_QuyetDinhTotNghiep_Base.cs">
+      <DependentUpon>cDKQHT_QuyetDinhTotNghiep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_QuyetDinhTotNghiep_SinhVien.cs" />
+    <Compile Include="cDKQHT_QuyetDinhTotNghiep_SinhVien_Base.cs">
+      <DependentUpon>cDKQHT_QuyetDinhTotNghiep_SinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_ThamSoQuyChe.cs" />
+    <Compile Include="cDKQHT_ThamSoQuyChe_Base.cs">
+      <DependentUpon>cDKQHT_ThamSoQuyChe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_ThanhPhanDiem.cs" />
+    <Compile Include="cDKQHT_ThanhPhanDiem_Base.cs">
+      <DependentUpon>cDKQHT_ThanhPhanDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_ThanhPhanDiemBatBuoc.cs" />
+    <Compile Include="cDKQHT_ThanhPhanDiemBatBuoc_Base.cs">
+      <DependentUpon>cDKQHT_ThanhPhanDiemBatBuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_ToChucThi.cs" />
+    <Compile Include="cDKQHT_ToChucThi_Base.cs">
+      <DependentUpon>cDKQHT_ToChucThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_XepLoaiMonHoc.cs" />
+    <Compile Include="cDKQHT_XepLoaiMonHoc_Base.cs">
+      <DependentUpon>cDKQHT_XepLoaiMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDKQHT_XepLoaiTotNghiep.cs" />
+    <Compile Include="cDKQHT_XepLoaiTotNghiep_Base.cs">
+      <DependentUpon>cDKQHT_XepLoaiTotNghiep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_DonVi.cs" />
+    <Compile Include="cDNS_DonVi_Base.cs">
+      <DependentUpon>cDNS_DonVi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_GiaoVien.cs" />
+    <Compile Include="cDNS_GiaoVien_Base.cs">
+      <DependentUpon>cDNS_GiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_GiaoVien_HDLD.cs" />
+    <Compile Include="cDNS_GiaoVien_HDLD_Base.cs">
+      <DependentUpon>cDNS_GiaoVien_HDLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_GiaoVien_NghiViec.cs" />
+    <Compile Include="cDNS_GiaoVien_NghiViec_Base.cs">
+      <DependentUpon>cDNS_GiaoVien_NghiViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_GiaoVien_NgoaiNgu.cs" />
+    <Compile Include="cDNS_GiaoVien_NgoaiNgu_Base.cs">
+      <DependentUpon>cDNS_GiaoVien_NgoaiNgu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_GiaoVien_QuanHeGiaDinh.cs" />
+    <Compile Include="cDNS_GiaoVien_QuanHeGiaDinh_Base.cs">
+      <DependentUpon>cDNS_GiaoVien_QuanHeGiaDinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_GiaoVien_ThongTin.cs" />
+    <Compile Include="cDNS_GiaoVien_ThongTin_Base.cs">
+      <DependentUpon>cDNS_GiaoVien_ThongTin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_LinhVucCongTac_Base.cs" />
+    <Compile Include="cDNS_LoaiLuanChuyen.cs" />
+    <Compile Include="cDNS_LoaiLuanChuyen_Base.cs">
+      <DependentUpon>cDNS_LoaiLuanChuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_LoaiPhuCap.cs" />
+    <Compile Include="cDNS_LoaiPhuCap_Base.cs">
+      <DependentUpon>cDNS_LoaiPhuCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_Luong.cs" />
+    <Compile Include="cDNS_Luong_Base.cs">
+      <DependentUpon>cDNS_Luong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_LuongCoBan.cs" />
+    <Compile Include="cDNS_LuongCoBan_Base.cs">
+      <DependentUpon>cDNS_LuongCoBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_LuongCu.cs" />
+    <Compile Include="cDNS_LuongCu_Base.cs">
+      <DependentUpon>cDNS_LuongCu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_NgachCongChuc.cs" />
+    <Compile Include="cDNS_NgachCongChuc_Base.cs">
+      <DependentUpon>cDNS_NgachCongChuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_NhomNgach.cs" />
+    <Compile Include="cDNS_NhomNgach_Base.cs">
+      <DependentUpon>cDNS_NhomNgach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_PhuCap.cs" />
+    <Compile Include="cDNS_PhuCap_Base.cs">
+      <DependentUpon>cDNS_PhuCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_QuaTrinhBoiDuong.cs" />
+    <Compile Include="cDNS_QuaTrinhBoiDuong_Base.cs">
+      <DependentUpon>cDNS_QuaTrinhBoiDuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_QuaTrinhBoNhiemChucVu.cs" />
+    <Compile Include="cDNS_QuaTrinhBoNhiemChucVu_Base.cs">
+      <DependentUpon>cDNS_QuaTrinhBoNhiemChucVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_QuaTrinhCongTac.cs" />
+    <Compile Include="cDNS_QuaTrinhCongTac_Base.cs">
+      <DependentUpon>cDNS_QuaTrinhCongTac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_QuaTrinhKhenThuong.cs" />
+    <Compile Include="cDNS_QuaTrinhKhenThuong_Base.cs">
+      <DependentUpon>cDNS_QuaTrinhKhenThuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_QuaTrinhKyLuat.cs" />
+    <Compile Include="cDNS_QuaTrinhKyLuat_Base.cs">
+      <DependentUpon>cDNS_QuaTrinhKyLuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_QuaTrinhLuanChuyen.cs" />
+    <Compile Include="cDNS_QuaTrinhLuanChuyen_Base.cs">
+      <DependentUpon>cDNS_QuaTrinhLuanChuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_QuaTrinhMienNhiemTuChuc.cs" />
+    <Compile Include="cDNS_QuaTrinhMienNhiemTuChuc_Base.cs">
+      <DependentUpon>cDNS_QuaTrinhMienNhiemTuChuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_QuaTrinhThamGiaLucLuongVuTrang.cs" />
+    <Compile Include="cDNS_QuaTrinhThamGiaLucLuongVuTrang_Base.cs">
+      <DependentUpon>cDNS_QuaTrinhThamGiaLucLuongVuTrang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_QuaTrinhThamGiaToChucCTXH.cs" />
+    <Compile Include="cDNS_QuaTrinhThamGiaToChucCTXH_Base.cs">
+      <DependentUpon>cDNS_QuaTrinhThamGiaToChucCTXH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDNS_SoQuyetDinh.cs" />
+    <Compile Include="cDNS_SoQuyetDinh_Base.cs">
+      <DependentUpon>cDNS_SoQuyetDinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDHT_Report.cs" />
+    <Compile Include="cDReport_Base.cs">
+      <DependentUpon>cDHT_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDSV_AnhXaMon.cs" />
+    <Compile Include="cDSV_AnhXaMon_Base.cs">
+      <DependentUpon>cDSV_AnhXaMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDSV_DiemRenLuyen.cs" />
+    <Compile Include="cDSV_DiemRenLuyen_Base.cs">
+      <DependentUpon>cDSV_DiemRenLuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDSV_DiemRenLuyenTheoThang.cs" />
+    <Compile Include="cDSV_DiemRenLuyenTheoThang_Base.cs">
+      <DependentUpon>cDSV_DiemRenLuyenTheoThang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDSV_DiemRenLuyenToanKhoa.cs" />
+    <Compile Include="cDSV_DiemRenLuyenToanKhoa_Base.cs">
+      <DependentUpon>cDSV_DiemRenLuyenToanKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDSV_DoiTuongMienGiam.cs" />
+    <Compile Include="cDSV_DoiTuongMienGiam_Base.cs">
+      <DependentUpon>cDSV_DoiTuongMienGiam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDSV_DoiTuongTroCap.cs" />
+    <Compile Include="cDSV_DoiTuongTroCap_Base.cs">
+      <DependentUpon>cDSV_DoiTuongTroCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDSV_Lop_GiaoVienChuNhiem.cs" />
+    <Compile Include="cDSV_Lop_GiaoVienChuNhiem_Base.cs">
+      <DependentUpon>cDSV_Lop_GiaoVienChuNhiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDSV_NhapHocLai.cs" />
+    <Compile Include="cDSV_NhapHocLai_Base.cs">
+      <DependentUpon>cDSV_NhapHocLai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDSV_QuyetDinhKhenThuong.cs" />
+    <Compile Include="cDSV_QuyetDinhKhenThuong_Base.cs">
+      <DependentUpon>cDSV_QuyetDinhKhenThuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDSV_QuyetDinhKyLuat.cs" />
+    <Compile Include="cDSV_QuyetDinhKyLuat_Base.cs">
+      <DependentUpon>cDSV_QuyetDinhKyLuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDSV_SinhVien.cs" />
+    <Compile Include="cDSV_SinhVien_Base.cs">
+      <DependentUpon>cDSV_SinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDSV_SinhVien_GiayToNhapTruong.cs" />
+    <Compile Include="cDSV_SinhVien_GiayToNhapTruong_Base.cs">
+      <DependentUpon>cDSV_SinhVien_GiayToNhapTruong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDSV_SinhVien_KhenThuong.cs" />
+    <Compile Include="cDSV_SinhVien_KhenThuong_Base.cs">
+      <DependentUpon>cDSV_SinhVien_KhenThuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDSV_SinhVien_KyLuat.cs" />
+    <Compile Include="cDSV_SinhVien_KyLuat_Base.cs">
+      <DependentUpon>cDSV_SinhVien_KyLuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDSV_SinhVien_Lop.cs" />
+    <Compile Include="cDSV_SinhVien_Lop_Base.cs">
+      <DependentUpon>cDSV_SinhVien_Lop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDSV_SinhVienNhapTruong.cs" />
+    <Compile Include="cDSV_SinhVienNhapTruong_Base.cs">
+      <DependentUpon>cDSV_SinhVienNhapTruong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDSV_SinhVien_QuanHeGiaDinh.cs" />
+    <Compile Include="cDSV_SinhVien_QuanHeGiaDinh_Base.cs">
+      <DependentUpon>cDSV_SinhVien_QuanHeGiaDinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDSV_SinhVien_ThongTinKhac.cs" />
+    <Compile Include="cDSV_SinhVien_ThongTinKhac_Base.cs">
+      <DependentUpon>cDSV_SinhVien_ThongTinKhac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDSV_ThangRenLuyenTrongKy.cs" />
+    <Compile Include="cDSV_ThangRenLuyenTrongKy_Base.cs">
+      <DependentUpon>cDSV_ThangRenLuyenTrongKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDTC_BienLaiThuTien.cs" />
+    <Compile Include="cDTC_BienLaiThuTien_Base.cs">
+      <DependentUpon>cDTC_BienLaiThuTien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDTC_BienLaiThuTien_ChiTiet.cs" />
+    <Compile Include="cDTC_BienLaiThuTien_ChiTiet_Base.cs">
+      <DependentUpon>cDTC_BienLaiThuTien_ChiTiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDTC_DanhSachHocBong.cs" />
+    <Compile Include="cDTC_DanhSachHocBong_Base.cs">
+      <DependentUpon>cDTC_DanhSachHocBong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDTC_DanhSachHocBong_ChiTiet.cs" />
+    <Compile Include="cDTC_DanhSachHocBong_ChiTiet_Base.cs">
+      <DependentUpon>cDTC_DanhSachHocBong_ChiTiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDTC_DanhSachMienGiam.cs" />
+    <Compile Include="cDTC_DanhSachMienGiam_Base.cs">
+      <DependentUpon>cDTC_DanhSachMienGiam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDTC_DanhSachMienGiam_ChiTiet.cs" />
+    <Compile Include="cDTC_DanhSachMienGiam_ChiTiet_Base.cs">
+      <DependentUpon>cDTC_DanhSachMienGiam_ChiTiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDTC_DanhSachTroCap.cs" />
+    <Compile Include="cDTC_DanhSachTroCap_Base.cs">
+      <DependentUpon>cDTC_DanhSachTroCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDTC_DanhSachTroCap_ChiTiet.cs" />
+    <Compile Include="cDTC_DanhSachTroCap_ChiTiet_Base.cs">
+      <DependentUpon>cDTC_DanhSachTroCap_ChiTiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDTC_DinhMucThuSinhVien.cs" />
+    <Compile Include="cDTC_DinhMucThuSinhVien_Base.cs">
+      <DependentUpon>cDTC_DinhMucThuSinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDTC_DinhMucThuSinhVien_ChiTiet.cs" />
+    <Compile Include="cDTC_DinhMucThuSinhVien_ChiTiet_Base.cs">
+      <DependentUpon>cDTC_DinhMucThuSinhVien_ChiTiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDTC_LoaiHocBong.cs" />
+    <Compile Include="cDTC_LoaiHocBong_Base.cs">
+      <DependentUpon>cDTC_LoaiHocBong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDTC_LoaiThuChi.cs" />
+    <Compile Include="cDTC_LoaiThuChi_Base.cs">
+      <DependentUpon>cDTC_LoaiThuChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDTC_PhanBoQuyHocBong.cs" />
+    <Compile Include="cDTC_PhanBoQuyHocBong_Base.cs">
+      <DependentUpon>cDTC_PhanBoQuyHocBong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDTC_QuyenHoaDon.cs" />
+    <Compile Include="cDTC_QuyenHoaDon_Base.cs">
+      <DependentUpon>cDTC_QuyenHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDTC_QuyenHoaDon_TrinhDo.cs" />
+    <Compile Include="cDTC_QuyenHoaDon_TrinhDo_Base.cs">
+      <DependentUpon>cDTC_QuyenHoaDon_TrinhDo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDTC_QuyHocBong.cs" />
+    <Compile Include="cDTC_QuyHocBong_Base.cs">
+      <DependentUpon>cDTC_QuyHocBong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDXL_BaoBanGiaoVien.cs" />
+    <Compile Include="cDXL_BaoBanGiaoVien_Base.cs">
+      <DependentUpon>cDXL_BaoBanGiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDXL_BaoBanPhongHoc.cs" />
+    <Compile Include="cDXL_BaoBanPhongHoc_Base.cs">
+      <DependentUpon>cDXL_BaoBanPhongHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDXL_GiaoVienXepTKB.cs" />
+    <Compile Include="cDXL_GiaoVienXepTKB_Base.cs">
+      <DependentUpon>cDXL_GiaoVienXepTKB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDXL_GiaoVien_MonHoc.cs" />
+    <Compile Include="cDXL_GiaoVien_MonHoc_Base.cs">
+      <DependentUpon>cDXL_GiaoVien_MonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDXL_KeHoachChiTiet.cs" />
+    <Compile Include="cDXL_KeHoachChiTiet_Base.cs">
+      <DependentUpon>cDXL_KeHoachChiTiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDXL_KeHoachKhac.cs" />
+    <Compile Include="cDXL_KeHoachKhac_Base.cs">
+      <DependentUpon>cDXL_KeHoachKhac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDXL_KeHoachThucHanh.cs" />
+    <Compile Include="cDXL_KeHoachThucHanh_Base.cs">
+      <DependentUpon>cDXL_KeHoachThucHanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDXL_KeHoachThucHanhKyHieu.cs" />
+    <Compile Include="cDXL_KeHoachThucHanhKyHieu_Base.cs">
+      <DependentUpon>cDXL_KeHoachThucHanhKyHieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDXL_KeHoachThucHanhChiTiet.cs" />
+    <Compile Include="cDXL_KeHoachThucHanhChiTiet_Base.cs">
+      <DependentUpon>cDXL_KeHoachThucHanhChiTiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDXL_KeHoachTruong.cs" />
+    <Compile Include="cDXL_KeHoachTruong_Base.cs">
+      <DependentUpon>cDXL_KeHoachTruong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDXL_LopTachGop.cs" />
+    <Compile Include="cDXL_LopTachGop_Base.cs">
+      <DependentUpon>cDXL_LopTachGop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDXL_LopTachGop_MonHoc.cs" />
+    <Compile Include="cDXL_LopTachGop_MonHoc_Base.cs">
+      <DependentUpon>cDXL_LopTachGop_MonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDXL_MonHocTrongKy.cs" />
+    <Compile Include="cDXL_MonHocTrongKy_Base.cs">
+      <DependentUpon>cDXL_MonHocTrongKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDXL_NgayNghiToanTruong.cs" />
+    <Compile Include="cDXL_NgayNghiToanTruong_Base.cs">
+      <DependentUpon>cDXL_NgayNghiToanTruong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDXL_PhanCongGiaoVien.cs" />
+    <Compile Include="cDXL_PhanCongGiaoVien_Base.cs">
+      <DependentUpon>cDXL_PhanCongGiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDXL_PhongHocXepTKB.cs" />
+    <Compile Include="cDXL_PhongHocXepTKB_Base.cs">
+      <DependentUpon>cDXL_PhongHocXepTKB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDXL_PhongHoc_MonHoc.cs" />
+    <Compile Include="cDXL_PhongHoc_MonHoc_Base.cs">
+      <DependentUpon>cDXL_PhongHoc_MonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDXL_SuKienTKB.cs" />
+    <Compile Include="cDXL_SuKienTKB_Base.cs">
+      <DependentUpon>cDXL_SuKienTKB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDXL_ThuocTinhMonHoc.cs" />
+    <Compile Include="cDXL_ThuocTinhMonHoc_Base.cs">
+      <DependentUpon>cDXL_ThuocTinhMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDXL_TietNghiCoDinhLop.cs" />
+    <Compile Include="cDXL_TietNghiCoDinhLop_Base.cs">
+      <DependentUpon>cDXL_TietNghiCoDinhLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cDXL_Tuan.cs" />
+    <Compile Include="cDXL_Tuan_Base.cs">
+      <DependentUpon>cDXL_Tuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UnimOs.Entity\UnimOs.Entity.csproj">
+      <Project>{7139F83E-2FE7-43E7-9742-C3BF6D96959D}</Project>
+      <Name>UnimOs.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

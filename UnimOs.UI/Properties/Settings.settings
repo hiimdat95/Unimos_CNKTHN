@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="UnimOs.UI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="KQHT_XepLoaiTotNghiepID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">KQHT_XepLoaiTotNghiepID</Value>
+    </Setting>
+    <Setting Name="TenXepLoai" Type="System.String" Scope="User">
+      <Value Profile="(Default)">TenXepLoai</Value>
+    </Setting>
+    <Setting Name="IDDM_NamHoc" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="HocKy" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="PageDefault" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ribbonPageQLTaiChinh</Value>
+    </Setting>
+    <Setting Name="TC_InKhiLuu" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">103.28.36.63</Value>
+    </Setting>
+    <Setting Name="DatabaseName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">nhsvh5vs_UnimOs</Value>
+    </Setting>
+    <Setting Name="UserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">nhsvh_unimos</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">hncte@123</Value>
+    </Setting>
+    <Setting Name="DuongDanThuMucBaoCao" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\BaoCaoUnimOs</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

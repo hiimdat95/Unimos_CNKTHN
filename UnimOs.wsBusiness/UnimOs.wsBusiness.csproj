@@ -1,0 +1,1109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96C916C3-D57B-4F0F-8D15-3ADBFA149BA9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UnimOs.wsBusiness</RootNamespace>
+    <AssemblyName>UnimOs.wsBusiness</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.C1Report.2">
+      <HintPath>..\UnimOs.UI\DllFile\C1.Win.C1Report.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v12.1.Core, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v12.1.Core, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Reports.v12.1.Designer, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v12.1, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v12.1.Extensions, Version=12.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TruongViet.UnimOs.Entity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="vnConvert">
+      <HintPath>..\UnimOs.UI\DllFile\vnConvert.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cBwsBase.cs" />
+    <Compile Include="cBwsDM_BoMon.cs" />
+    <Compile Include="cBwsDM_ChucDanh.cs" />
+    <Compile Include="cBwsDM_ChuyenNganh.cs" />
+    <Compile Include="cBwsDM_He.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cBwsDM_HinhThucDaoTao.cs" />
+    <Compile Include="cBwsDM_HinhThucThi.cs" />
+    <Compile Include="cBwsDM_Khoa.cs" />
+    <Compile Include="cBwsDM_KhoaHoc.cs" />
+    <Compile Include="cBwsDM_KhoiKienThuc.cs" />
+    <Compile Include="cBwsDM_Lop.cs" />
+    <Compile Include="cBwsDM_MonHoc.cs" />
+    <Compile Include="cBwsDM_NamHoc.cs" />
+    <Compile Include="cBwsDM_Nganh.cs" />
+    <Compile Include="cBwsDM_PhongHoc.cs" />
+    <Compile Include="cBwsDM_TinhHuyenXa.cs" />
+    <Compile Include="cBwsDM_TrinhDo.cs" />
+    <Compile Include="cBwsGG_CongViecGiaoVien.cs" />
+    <Compile Include="cBwsGG_DinhMucGioDay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cBwsGG_DinhMucTheoChucDanh.cs" />
+    <Compile Include="cBwsGG_GiangDayGiaoVien.cs" />
+    <Compile Include="cBwsGG_HeSoLopDongTheoKhoa.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cBwsGG_HeSoTheoTrinhDo.cs" />
+    <Compile Include="cBwsHT_DongBo.cs" />
+    <Compile Include="cBwsHT_DuLieuNhap.cs" />
+    <Compile Include="cBwsHT_Log.cs" />
+    <Compile Include="cBwsHT_Report.cs" />
+    <Compile Include="cBwsHT_ThamSoHeThong.cs" />
+    <Compile Include="cBwsHT_ThongTinTruong.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cBwsHT_User.cs" />
+    <Compile Include="cBwsKQHT_ChuongTrinhDaoTao.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cBwsKQHT_CongThucDiem.cs" />
+    <Compile Include="cBwsKQHT_CongThucDiemToanKhoa.cs" />
+    <Compile Include="cBwsKQHT_CongThucDiem_ThanhPhanDiem.cs" />
+    <Compile Include="cBwsKQHT_CTDT_ChiTiet.cs" />
+    <Compile Include="cBwsKQHT_CTDT_CT_KhoiKienThuc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cBwsKQHT_CTDT_Lop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cBwsKQHT_CT_KhoiKienThuc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cBwsKQHT_DaChuyenDiem.cs" />
+    <Compile Include="cBwsKQHT_DanhSachDuThi.cs" />
+    <Compile Include="cBwsKQHT_DanhSachKhongThi.cs" />
+    <Compile Include="cBwsKQHT_DiemDanh.cs" />
+    <Compile Include="cBwsKQHT_DiemThanhPhan.cs" />
+    <Compile Include="cBwsKQHT_DiemThi.cs" />
+    <Compile Include="cBwsKQHT_DiemTongKetMon.cs" />
+    <Compile Include="cBwsKQHT_MonHoc_CT_KhoiKienThuc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cBwsKQHT_MonThiTotNghiep_Lop.cs" />
+    <Compile Include="cBwsKQHT_QuyChe.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cBwsKQHT_ThanhPhanDiem.cs" />
+    <Compile Include="cBwsKQHT_XepLoaiMonHoc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cBwsNS_DonVi.cs" />
+    <Compile Include="cBwsNS_GiaoVien.cs" />
+    <Compile Include="cBwsNS_NhomNgach.cs" />
+    <Compile Include="cBwsSV_SinhVien.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cBwsTC_BienLaiThuTien.cs" />
+    <Compile Include="cBwsTC_LoaiThuChi.cs" />
+    <Compile Include="cBwsXL_GiaoVien_MonHoc.cs" />
+    <Compile Include="cBwsXL_KeHoachKhac.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cBwsXL_MonHocTrongKy.cs" />
+    <Compile Include="cBwsXL_PhanCongGiaoVien.cs" />
+    <Compile Include="cBwsXL_PhongHoc_MonHoc.cs" />
+    <Compile Include="cBwsXL_Tuan.cs" />
+    <Compile Include="clsAuth.cs" />
+    <Compile Include="clsDTB.cs" />
+    <Compile Include="clsRandom.cs" />
+    <Compile Include="DynamicFomula.cs" />
+    <Compile Include="Engine\clsTKB.cs" />
+    <Compile Include="Engine\SchoolEngine.cs" />
+    <Compile Include="Engine\SuKienTKB.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\wsUnimOs\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Properties\DataSources\System.Data.SqlClient.SqlParameter.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_BoMonInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_CapKhenThuongInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_ChucDanhInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_ChucVuInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_ChuyenNganhInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_DanhHieuDuocPhongTangInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_DanTocInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_DiaDiemInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_DoiTuongMienGiamInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_DoiTuongTroCapInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_GiayToNhapTruongInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_HanhViInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_HeInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_HinhThucDaoTaoInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_HinhThucThiInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_HocHamInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_HocViInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_KhoaHocInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_KhoaInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_KhoiKienThucInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_LoaiChuyenMonInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_LoaiCongViecInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_LoaiKhenThuongInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_LoaiPhongInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_LoaiQuyInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_LopInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_MonHocInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_NamHocInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_NganhInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_NgoaiNguInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_PhongHocInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_QuanHamInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_QuanHeGiaDinhInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_QuocTichInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_TangInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_TinhHuyenXaInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_ToaNhaInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_TonGiaoInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_TrinhDoChuyenMonInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_TrinhDoInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_TrinhDoLyLuanInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_TrinhDoQuanLyHanhChinhNhaNuocInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_TruongLienKetInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_VanBangChungChiInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_XepLoaiChungChiInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.DM_XepLoaiRenLuyenInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.GG_CongViecGiaoVienInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.GG_DinhMucGioDayInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.GG_DinhMucTheoChucDanhInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.GG_GiangDayGiaoVienInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.GG_HeSoLopDongTheoKhoaInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.GG_HeSoTheoTrinhDoInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.HT_ChucNangInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.HT_DongBoInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.HT_LogInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.HT_PhanHeInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.HT_ReportInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.HT_ThamSoHeThongInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.HT_ThongTinTruongInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.HT_UserGroupInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.HT_UserGroup_ChucNangInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.HT_UserInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.HT_User_ChucNangInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_ChoNhapLaiDiemInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_ChoNhapLaiDiem_SinhVienInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_ChuongTrinhDaoTaoInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_CongThucDiemInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_CongThucDiemToanKhoaInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_CongThucDiem_ThanhPhanDiemInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_CTDT_ChiTietInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_CTDT_CT_KhoiKienThucInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_CTDT_LopInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_CT_KhoiKienThucInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_DaChuyenDiemInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_DangKyHocLaiInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_DangKyMonChonInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_DangKyThiLaiInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_DangKyThiLaiTotNghiepInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_DanhSachDuThiInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_DanhSachHocTiepInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_DanhSachKhongThiInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_DanhSachKhongThiTotNghiepInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_DanhSachNgungHocInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_DiemDanhInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_DiemDanh_ChiTietInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_DiemMonThiTotNghiepInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_DiemThanhPhanInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_DiemThiInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_DiemTongKetHocKyInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_DiemTongKetMonInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_DiemTongKetToanKhoaInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_HoiDongMonInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_HoiDongMon_ChiTietInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_HoiDongMon_DiemInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_HoiDongMon_SinhVienInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_LopHocLaiInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_MonHoc_CT_KhoiKienThucInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_MonThiTotNghiepInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_MonThiTotNghiep_LopInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_QuyCheInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_QuyChe_ThamSoQuyCheInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_QuyetDinhTotNghiepInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_QuyetDinhTotNghiep_SinhVienInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_ThamSoQuyCheInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_ThanhPhanDiemBatBuocInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_ThanhPhanDiemInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_ToChucThiInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_XepLoaiMonHocInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.KQHT_XepLoaiTotNghiepInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_BoMon_GetByIDKhoaResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_BoMon_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_ChucVu_QuaTrinhBoNhiem_GetBy_IDNS_GiaoVienResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_ChuyenNganh_GetByIDNganhResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_HinhThucThi_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_KhoaHoc_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_Khoa_GetByIDBoMonResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_Khoa_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_KhoiKienThuc_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_Lop_GetByKhoaResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_Lop_GetChonResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_Lop_GetChuongTrinhDaoTaoResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_Lop_GetLopGopResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_Lop_GetTreeByIDGiaoVienResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_Lop_GetTreeResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_Lop_GetTree_ThiSinhTuDoResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_Lop_Get_TKBResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_MonHoc_GetDanhSachResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_MonHoc_GetMonKyByLopResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_MonHoc_GetMonThiTotNghiepResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_MonHoc_GetNotInIDCTKhoiKienThucResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_MonHoc_GetNotInIDGiaoVienResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_MonHoc_GetPhongChuyenMonResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_MonHoc_GetPhongHoc_MonHocResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_MonHoc_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_NamHoc_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_Nganh_GetByIDKhoaResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_Nganh_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_PhongHoc_GetByIDToaNhaResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_PhongHoc_GetChonResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_PhongHoc_GetKeHoachThucHanhResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_TinhHuyenXa_GetByCapResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_TinhHuyenXa_GetTinhResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_TrinhDo_GetByIDHeResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_DM_TrinhDo_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_GG_CongViecGiaoVien_GetAllByHocKyResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_GG_CongViecGiaoVien_GetByIDDM_LoaiCongViecResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_GG_CongViecGiaoVien_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_GG_DinhMucGioDay_GetByIDNS_DonViResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_GG_DinhMucGioDay_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_GG_GiangDayGiaoVien_GetBangTongHopResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_GG_GiaoVien_GetBy_DonVi_ChucDanhResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_GG_HeSoLopDongTheoKhoa_GetAllResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_GG_HeSoLopDongTheoKhoa_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_HT_DongBo_GetDanhSachThayDoiResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_HT_DongBo_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_HT_Report_GetByNameResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_HT_ThamSoHeThong_GetByMaThamSoResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_HT_ThamSoHeThong_GetByPhanHeResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_HT_ThamSoHeThong_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_HT_ThongTinTruong_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_HT_User_GetByUserNameResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_HT_User_GetChucNangResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_ChuongTrinhDaoTao_GetChiTietResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_ChuongTrinhDaoTao_GetDanhSachResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_ChuongTrinhDaoTao_GetLopResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_ChuongTrinhDaoTao_GetMonChuaToChucResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_ChuongTrinhDaoTao_GetMonKhungResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_ChuongTrinhDaoTao_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_CTDT_ChiTiet_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_CTDT_CT_KhoiKienThuc_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_CTDT_Lop_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_CT_KhoiKienThuc_GetChonResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_CT_KhoiKienThuc_GetDanhSachResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DaChuyenDiem_GetByIDMonHocTrongKyResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DaChuyenDiem_GetLichSuSuaDiemResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DaChuyenDiem_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DanhSachDuThi_GetByIDToChucThiResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DanhSachDuThi_GetDaChuyenDiemByMonHocTrongKyResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DanhSachDuThi_GetDanhSachResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DanhSachDuThi_GetNhapDiemResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DanhSachKhongThi_GetIn_SinhVienResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DanhSachKhongThi_GetNotIn_SinhVienResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DiemDanh_ChoNhapLaiDiem_GetByLopResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DiemDanh_GetByLopResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DiemDanh_GetDanhSachResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DiemDanh_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DiemThangPhan_GetTong_byIDXL_MonHocTrongKyResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DiemThanhPhan_ChoNhapLaiDiem_GetDanhSachResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DiemThanhPhan_GetDanhSachResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DiemThanhPhan_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DiemThanhPhan_KiemTraDiemResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DiemThi_ChoNhapLaiDiem_GetByLopResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DiemThi_GetByLopResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DiemThi_GetDanhSachKhongQuaResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DiemThi_GetDanhSachResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DiemThi_GetDanhSachThiLaiResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DiemThi_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DiemTongKetMon_ChoNhapLaiDiem_GetByLopResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DiemTongKetMon_GetByLopResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DiemTongKetMon_GetDanhSachNhapDiemResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DiemTongKetMon_GetDanhSachResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DiemTongKetMon_GetMonKyResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DiemTongKetMon_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_DiemTongKetMon_GetSoMonCoDiemByLopResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_MonHoc_CT_KhoiKienThuc_GetDanhSachResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_MonHoc_CT_KhoiKienThuc_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_MonThiTotNghiep_Lop_GetAllMonResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_MonThiTotNghiep_Lop_GetIn_MonResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_MonThiTotNghiep_Lop_GetNotIn_MonResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_QuyChe_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_QuyChe_GetThamSoResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_QuyChe_GetThamSo_NotInResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_ThanhPhanDiem_GetByIDTrinhDoResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_ThanhPhanDiem_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_KQHT_XepLoaiMonHoc_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_DonVi_GetByIDDM_KhoaResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_DonVi_GetByIDResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_DonVi_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_GiaoVien_DangGiangDay_GetByIDNS_DonViResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_GiaoVien_GetBaoCaoChatLuongCanBoResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_GiaoVien_GetByIDNS_DonViResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_GiaoVien_GetByUserNameResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_GiaoVien_GetForLapTaiKhoanResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_GiaoVien_GetHoSoResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_GiaoVien_GetMaLonNhatResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_GiaoVien_Get_CanhBaoHanNghiHuuResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_GiaoVien_Get_CanhBaoHetNhiemKyResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_GiaoVien_Get_SoYeuLyLichResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_GiaoVien_Get_TKBResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_GiaoVien_NangBacChuyenNgach_GetByIDNS_DonViResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_TongHopCacQuaTrinh_Get_QuaTrinhBoiDuongResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_TongHopCacQuaTrinh_Get_QuaTrinhBoNhiemChucVuResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_TongHopCacQuaTrinh_Get_QuaTrinhCongTacResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_TongHopCacQuaTrinh_Get_QuaTrinhKhenThuongResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_TongHopCacQuaTrinh_Get_QuaTrinhKyLuatResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_TongHopCacQuaTrinh_Get_QuaTrinhLuanChuyenResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_TongHopCacQuaTrinh_Get_QuaTrinhMienNhiemTuChucResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_TongHopCacQuaTrinh_Get_QuaTrinhThamGiaLLVTResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_NS_TongHopCacQuaTrinh_Get_QuaTrinhThamGiaTCCTXHResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_SV_SinhVien_GetByLopResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_SV_SinhVien_GetByLop_MonResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_SV_SinhVien_GetHoSoResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_SV_SinhVien_KiemTraMaSVResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_SV_SinhVien_TimKiemResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_TC_BienLaiThuTien_GetBySinhVienResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_TC_BienLaiThuTien_GetChiTietResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_TC_BienLaiThuTien_GetSoPhieuResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_TC_LoaiThuChi_GetBy_IDNamHoc_HocKyResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_GiaoVien_MonHoc_GetByIDDM_MonHocResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_GiaoVien_MonHoc_GetByMonLopResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_GiaoVien_MonHoc_GetDanhSachResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_GiaoVien_MonHoc_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_KeHoachKhac_GetComboResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_MonHocTrongKy_GetAllByHocKyNamHocResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_MonHocTrongKy_GetByIDGiaoVienResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_MonHocTrongKy_GetByLopKhoaResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_MonHocTrongKy_GetByLopResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_MonHocTrongKy_GetDiemMonByIDSV_SinhVienAndIDDM_LopResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_MonHocTrongKy_GetMonKyChuaThucHanhResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_MonHocTrongKy_GetMonKyResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_MonHocTrongKy_GetMonKyToanKhoaByLopResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_MonHocTrongKy_GetNhapDuLieuByHocKyNamHocResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_MonHocTrongKy_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_MonHocTrongKy_GetToanKhoaResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_MonHocTrongKy_GetToChucThiResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_PhanCongGiaoVien_GetByMonHocTrongKyResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_PhanCongGiaoVien_GetGiaoVienByMonHocTrongKyResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_PhanCongGiaoVien_GetGiaoVienResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_PhanCongGiaoVien_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_PhongHoc_MonHoc_GetByIDMonHocResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_PhongHoc_MonHoc_GetResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_Tuan_GetByIDNamHocResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_Tuan_GetByNamHoc_HocKyResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.Model.sp_XL_Tuan_GetByTuanThuResult.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_DonViInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_GiaoVienInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_GiaoVien_HDLDInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_GiaoVien_NghiViecInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_GiaoVien_NgoaiNguInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_GiaoVien_QuanHeGiaDinhInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_GiaoVien_ThongTinInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_LinhVucCongTacInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_LoaiLuanChuyenInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_LoaiPhuCapInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_LuongCoBanInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_LuongCuInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_LuongInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_NgachCongChucInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_NhomNgachInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_PhuCapInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_QuaTrinhBoiDuongInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_QuaTrinhBoNhiemChucVuInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_QuaTrinhCongTacInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_QuaTrinhKhenThuongInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_QuaTrinhKyLuatInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_QuaTrinhLuanChuyenInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_QuaTrinhMienNhiemTuChucInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_QuaTrinhThamGiaLucLuongVuTrangInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_QuaTrinhThamGiaToChucCTXHInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.NS_SoQuyetDinhInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.SV_AnhXaMonInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.SV_DiemRenLuyenInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.SV_DiemRenLuyenTheoThangInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.SV_DiemRenLuyenToanKhoaInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.SV_DoiTuongMienGiamInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.SV_DoiTuongTroCapInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.SV_Lop_GiaoVienChuNhiemInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.SV_NhapHocLaiInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.SV_QuyetDinhKhenThuongInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.SV_QuyetDinhKyLuatInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.SV_SinhVienInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.SV_SinhVienNhapTruongInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.SV_SinhVien_GiayToNhapTruongInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.SV_SinhVien_KhenThuongInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.SV_SinhVien_KyLuatInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.SV_SinhVien_LopInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.SV_SinhVien_QuanHeGiaDinhInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.SV_SinhVien_ThongTinKhacInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.SV_ThangRenLuyenTrongKyInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.TC_BienLaiThuTienInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.TC_BienLaiThuTien_ChiTietInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.TC_DanhSachHocBongInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.TC_DanhSachHocBong_ChiTietInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.TC_DanhSachMienGiamInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.TC_DanhSachMienGiam_ChiTietInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.TC_DanhSachTroCapInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.TC_DanhSachTroCap_ChiTietInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.TC_DinhMucThuSinhVienInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.TC_DinhMucThuSinhVien_ChiTietInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.TC_LoaiHocBongInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.TC_LoaiThuChiInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.TC_PhanBoQuyHocBongInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.TC_QuyenHoaDonInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.TC_QuyenHoaDon_TrinhDoInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.TC_QuyHocBongInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.XL_BaoBanGiaoVienInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.XL_BaoBanPhongHocInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.XL_GiaoVienXepTKBInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.XL_GiaoVien_MonHocInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.XL_KeHoachChiTietInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.XL_KeHoachKhacInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.XL_KeHoachThucHanhChiTietInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.XL_KeHoachThucHanhInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.XL_KeHoachThucHanhKyHieuInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.XL_KeHoachTruongInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.XL_LopTachGopInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.XL_LopTachGop_MonHocInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.XL_MonHocTrongKyInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.XL_NgayNghiToanTruongInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.XL_PhanCongGiaoVienInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.XL_PhongHocXepTKBInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.XL_PhongHoc_MonHocInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.XL_SuKienTKBInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.XL_ThuocTinhMonHocInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.XL_TietNghiCoDinhLopInfo.datasource" />
+    <None Include="Properties\DataSources\TruongViet.UnimOs.Entity.XL_TuanInfo.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_BoMon_GetByIDKhoaResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_BoMon_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_ChucVu_QuaTrinhBoNhiem_GetBy_IDNS_GiaoVienResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_ChuyenNganh_GetByIDNganhResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_HinhThucThi_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_KhoaHoc_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_Khoa_GetByIDBoMonResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_Khoa_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_KhoiKienThuc_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_Lop_GetByKhoaResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_Lop_GetChonResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_Lop_GetChuongTrinhDaoTaoResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_Lop_GetLopGopResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_Lop_GetTreeResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_Lop_GetTree_ThiSinhTuDoResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_Lop_Get_TKBResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_MonHoc_GetDanhSachResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_MonHoc_GetMonKyByLopResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_MonHoc_GetMonThiTotNghiepResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_MonHoc_GetNotInIDCTKhoiKienThucResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_MonHoc_GetNotInIDGiaoVienResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_MonHoc_GetPhongChuyenMonResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_MonHoc_GetPhongHoc_MonHocResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_MonHoc_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_NamHoc_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_Nganh_GetByIDKhoaResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_Nganh_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_PhongHoc_GetByIDToaNhaResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_PhongHoc_GetChonResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_PhongHoc_GetKeHoachThucHanhResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_TinhHuyenXa_GetByCapResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_TinhHuyenXa_GetTinhResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_TrinhDo_GetByIDHeResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_DM_TrinhDo_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_GG_CongViecGiaoVien_GetAllByHocKyResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_GG_CongViecGiaoVien_GetByIDDM_LoaiCongViecResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_GG_CongViecGiaoVien_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_GG_DinhMucGioDay_GetByIDNS_DonViResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_GG_DinhMucGioDay_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_GG_GiangDayGiaoVien_GetBangTongHopResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_GG_GiaoVien_GetBy_DonVi_ChucDanhResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_GG_HeSoLopDongTheoKhoa_GetAllResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_GG_HeSoLopDongTheoKhoa_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_HT_DongBo_GetDanhSachThayDoiResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_HT_DongBo_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_HT_Report_GetByNameResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_HT_ThamSoHeThong_GetByMaThamSoResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_HT_ThamSoHeThong_GetByPhanHeResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_HT_ThamSoHeThong_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_HT_ThongTinTruong_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_HT_User_GetByUserNameResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_HT_User_GetChucNangResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_ChuongTrinhDaoTao_GetChiTietResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_ChuongTrinhDaoTao_GetDanhSachResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_ChuongTrinhDaoTao_GetLopResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_ChuongTrinhDaoTao_GetMonChuaToChucResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_ChuongTrinhDaoTao_GetMonKhungResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_ChuongTrinhDaoTao_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_CTDT_ChiTiet_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_CTDT_CT_KhoiKienThuc_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_CTDT_Lop_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_CT_KhoiKienThuc_GetChonResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_CT_KhoiKienThuc_GetDanhSachResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DaChuyenDiem_GetByIDMonHocTrongKyResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DaChuyenDiem_GetLichSuSuaDiemResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DaChuyenDiem_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DanhSachDuThi_GetByIDToChucThiResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DanhSachDuThi_GetDaChuyenDiemByMonHocTrongKyResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DanhSachDuThi_GetDanhSachResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DanhSachDuThi_GetNhapDiemResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DanhSachKhongThi_GetIn_SinhVienResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DanhSachKhongThi_GetNotIn_SinhVienResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DiemDanh_ChoNhapLaiDiem_GetByLopResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DiemDanh_GetByLopResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DiemDanh_GetDanhSachResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DiemDanh_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DiemThangPhan_GetTong_byIDXL_MonHocTrongKyResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DiemThanhPhan_ChoNhapLaiDiem_GetDanhSachResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DiemThanhPhan_GetDanhSachResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DiemThanhPhan_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DiemThanhPhan_KiemTraDiemResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DiemThi_ChoNhapLaiDiem_GetByLopResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DiemThi_GetByLopResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DiemThi_GetDanhSachKhongQuaResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DiemThi_GetDanhSachResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DiemThi_GetDanhSachThiLaiResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DiemThi_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DiemTongKetMon_ChoNhapLaiDiem_GetByLopResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DiemTongKetMon_GetByLopResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DiemTongKetMon_GetDanhSachNhapDiemResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DiemTongKetMon_GetDanhSachResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DiemTongKetMon_GetMonKyResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DiemTongKetMon_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_DiemTongKetMon_GetSoMonCoDiemByLopResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_MonHoc_CT_KhoiKienThuc_GetDanhSachResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_MonHoc_CT_KhoiKienThuc_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_MonThiTotNghiep_Lop_GetAllMonResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_MonThiTotNghiep_Lop_GetIn_MonResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_MonThiTotNghiep_Lop_GetNotIn_MonResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_QuyChe_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_QuyChe_GetThamSoResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_QuyChe_GetThamSo_NotInResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_ThanhPhanDiem_GetByIDTrinhDoResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_ThanhPhanDiem_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_KQHT_XepLoaiMonHoc_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_DonVi_GetByIDDM_KhoaResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_DonVi_GetByIDResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_DonVi_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_GiaoVien_DangGiangDay_GetByIDNS_DonViResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_GiaoVien_GetBaoCaoChatLuongCanBoResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_GiaoVien_GetByIDNS_DonViResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_GiaoVien_GetByUserNameResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_GiaoVien_GetForLapTaiKhoanResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_GiaoVien_GetHoSoResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_GiaoVien_GetMaLonNhatResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_GiaoVien_Get_CanhBaoHanNghiHuuResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_GiaoVien_Get_CanhBaoHetNhiemKyResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_GiaoVien_Get_SoYeuLyLichResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_GiaoVien_Get_TKBResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_GiaoVien_NangBacChuyenNgach_GetByIDNS_DonViResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_TongHopCacQuaTrinh_Get_QuaTrinhBoiDuongResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_TongHopCacQuaTrinh_Get_QuaTrinhBoNhiemChucVuResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_TongHopCacQuaTrinh_Get_QuaTrinhCongTacResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_TongHopCacQuaTrinh_Get_QuaTrinhKhenThuongResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_TongHopCacQuaTrinh_Get_QuaTrinhKyLuatResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_TongHopCacQuaTrinh_Get_QuaTrinhLuanChuyenResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_TongHopCacQuaTrinh_Get_QuaTrinhMienNhiemTuChucResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_TongHopCacQuaTrinh_Get_QuaTrinhThamGiaLLVTResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_NS_TongHopCacQuaTrinh_Get_QuaTrinhThamGiaTCCTXHResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_SV_SinhVien_GetByLopResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_SV_SinhVien_GetByLop_MonResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_SV_SinhVien_GetHoSoResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_SV_SinhVien_KiemTraMaSVResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_SV_SinhVien_TimKiemResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_TC_BienLaiThuTien_GetBySinhVienResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_TC_BienLaiThuTien_GetChiTietResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_TC_BienLaiThuTien_GetSoPhieuResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_TC_LoaiThuChi_GetBy_IDNamHoc_HocKyResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_GiaoVien_MonHoc_GetByIDDM_MonHocResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_GiaoVien_MonHoc_GetByMonLopResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_GiaoVien_MonHoc_GetDanhSachResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_GiaoVien_MonHoc_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_KeHoachKhac_GetComboResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_MonHocTrongKy_GetAllByHocKyNamHocResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_MonHocTrongKy_GetByIDGiaoVienResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_MonHocTrongKy_GetByLopKhoaResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_MonHocTrongKy_GetByLopResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_MonHocTrongKy_GetDiemMonByIDSV_SinhVienAndIDDM_LopResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_MonHocTrongKy_GetMonKyChuaThucHanhResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_MonHocTrongKy_GetMonKyResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_MonHocTrongKy_GetMonKyToanKhoaByLopResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_MonHocTrongKy_GetNhapDuLieuByHocKyNamHocResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_MonHocTrongKy_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_MonHocTrongKy_GetToanKhoaResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_MonHocTrongKy_GetToChucThiResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_PhanCongGiaoVien_GetByMonHocTrongKyResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_PhanCongGiaoVien_GetGiaoVienByMonHocTrongKyResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_PhanCongGiaoVien_GetGiaoVienResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_PhanCongGiaoVien_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_PhongHoc_MonHoc_GetByIDMonHocResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_PhongHoc_MonHoc_GetResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_Tuan_GetByIDNamHocResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_Tuan_GetByNamHoc_HocKyResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOs.wsBusiness.wsUnimOs.sp_XL_Tuan_GetByTuanThuResult2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOsService1.wsdl" />
+    <None Include="Service References\wsUnimOs\UnimOsService11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOsService12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOsService13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOsService14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOsService15.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOsService16.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOsService17.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOsService18.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOsService19.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOsService20.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\wsUnimOs\UnimOsService21.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lib\Lib.csproj">
+      <Project>{b28974e9-eef7-4c6c-81a6-d8af029b089e}</Project>
+      <Name>Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnimOs.Data\UnimOs.Data.csProj">
+      <Project>{62087d15-c938-445f-8b55-5804278422c3}</Project>
+      <Name>UnimOs.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnimOs.Entity\UnimOs.Entity.csProj">
+      <Project>{7139f83e-2fe7-43e7-9742-c3bf6d96959d}</Project>
+      <Name>UnimOs.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\wsUnimOs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\wsUnimOs\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\wsUnimOs\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\wsUnimOs\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7139F83E-2FE7-43E7-9742-C3BF6D96959D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TruongViet.UnimOs.Entity</RootNamespace>
+    <AssemblyName>TruongViet.UnimOs.Entity</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DM_BoMonInfo.cs" />
+    <Compile Include="DM_CapKhenThuongInfo.cs" />
+    <Compile Include="DM_ChucDanhInfo.cs" />
+    <Compile Include="DM_ChucVuInfo.cs" />
+    <Compile Include="DM_ChuyenNganhInfo.cs" />
+    <Compile Include="DM_DanhHieuDuocPhongTangInfo.cs" />
+    <Compile Include="DM_DanTocInfo.cs" />
+    <Compile Include="DM_DiaDiemInfo.cs" />
+    <Compile Include="DM_DoiTuongMienGiamInfo.cs" />
+    <Compile Include="DM_DoiTuongTroCapInfo.cs" />
+    <Compile Include="DM_GiayToNhapTruongInfo.cs" />
+    <Compile Include="DM_HanhViInfo.cs" />
+    <Compile Include="DM_HeInfo.cs" />
+    <Compile Include="DM_HinhThucDaoTaoInfo.cs" />
+    <Compile Include="DM_HinhThucThiInfo.cs" />
+    <Compile Include="DM_HocHamInfo.cs" />
+    <Compile Include="DM_HocViInfo.cs" />
+    <Compile Include="DM_KhoaInfo.cs" />
+    <Compile Include="DM_KhoaHocInfo.cs" />
+    <Compile Include="DM_KhoiKienThucInfo.cs" />
+    <Compile Include="DM_LoaiChuyenMonInfo.cs" />
+    <Compile Include="DM_LoaiCongViecInfo.cs" />
+    <Compile Include="DM_LoaiKhenThuongInfo.cs" />
+    <Compile Include="DM_LoaiPhongInfo.cs" />
+    <Compile Include="DM_LoaiQuyInfo.cs" />
+    <Compile Include="DM_LopInfo.cs" />
+    <Compile Include="DM_MonHocInfo.cs" />
+    <Compile Include="DM_NamHocInfo.cs" />
+    <Compile Include="DM_NganhInfo.cs" />
+    <Compile Include="DM_NgoaiNguInfo.cs" />
+    <Compile Include="DM_PhongHocInfo.cs" />
+    <Compile Include="DM_QuanHamInfo.cs" />
+    <Compile Include="DM_QuanHeGiaDinhInfo.cs" />
+    <Compile Include="DM_QuocTichInfo.cs" />
+    <Compile Include="DM_TangInfo.cs" />
+    <Compile Include="DM_TinhHuyenXaInfo.cs" />
+    <Compile Include="DM_ToaNhaInfo.cs" />
+    <Compile Include="DM_TonGiaoInfo.cs" />
+    <Compile Include="DM_TrinhDoChuyenMonInfo.cs" />
+    <Compile Include="DM_TrinhDoInfo.cs" />
+    <Compile Include="DM_TrinhDoLyLuanInfo.cs" />
+    <Compile Include="DM_TrinhDoQuanLyHanhChinhNhaNuocInfo.cs" />
+    <Compile Include="DM_TruongLienKetInfo.cs" />
+    <Compile Include="DM_VanBangChungChiInfo.cs" />
+    <Compile Include="DM_XepLoaiChungChiInfo.cs" />
+    <Compile Include="DM_XepLoaiRenLuyenInfo.cs" />
+    <Compile Include="eNumConst.cs" />
+    <Compile Include="GG_CongViecGiaoVienInfo.cs" />
+    <Compile Include="GG_DinhMucGioDayInfo.cs" />
+    <Compile Include="GG_DinhMucTheoChucDanhInfo.cs" />
+    <Compile Include="GG_GiangDayGiaoVienInfo.cs" />
+    <Compile Include="GG_HeSoLopDongTheoKhoaInfo.cs" />
+    <Compile Include="GG_HeSoTheoTrinhDoInfo.cs" />
+    <Compile Include="HT_ChucNangInfo.cs" />
+    <Compile Include="HT_DongBoInfo.cs" />
+    <Compile Include="HT_LogInfo.cs" />
+    <Compile Include="HT_PhanHeInfo.cs" />
+    <Compile Include="HT_ThamSoHeThongInfo.cs" />
+    <Compile Include="HT_ThongTinTruongInfo.cs" />
+    <Compile Include="HT_UserGroupInfo.cs" />
+    <Compile Include="HT_UserGroup_ChucNangInfo.cs" />
+    <Compile Include="HT_UserInfo.cs" />
+    <Compile Include="HT_User_ChucNangInfo.cs" />
+    <Compile Include="KQHT_ChoNhapLaiDiemInfo.cs" />
+    <Compile Include="KQHT_ChoNhapLaiDiem_SinhVienInfo.cs" />
+    <Compile Include="KQHT_ChuongTrinhDaoTaoInfo.cs" />
+    <Compile Include="KQHT_CongThucDiemInfo.cs" />
+    <Compile Include="KQHT_CongThucDiemToanKhoaInfo.cs" />
+    <Compile Include="KQHT_CongThucDiem_ThanhPhanDiemInfo.cs" />
+    <Compile Include="KQHT_CTDT_ChiTietInfo.cs" />
+    <Compile Include="KQHT_CTDT_CT_KhoiKienThucInfo.cs" />
+    <Compile Include="KQHT_CTDT_LopInfo.cs" />
+    <Compile Include="KQHT_CT_KhoiKienThucInfo.cs" />
+    <Compile Include="KQHT_DaChuyenDiemInfo.cs" />
+    <Compile Include="KQHT_DangKyHocLaiInfo.cs" />
+    <Compile Include="KQHT_DangKyMonChonInfo.cs" />
+    <Compile Include="KQHT_DangKyThiLaiInfo.cs" />
+    <Compile Include="KQHT_DangKyThiLaiTotNghiepInfo.cs" />
+    <Compile Include="KQHT_DanhSachDuThiInfo.cs" />
+    <Compile Include="KQHT_DanhSachHocTiepInfo.cs" />
+    <Compile Include="KQHT_DanhSachKhongThiInfo.cs" />
+    <Compile Include="KQHT_DanhSachKhongThiTotNghiepInfo.cs" />
+    <Compile Include="KQHT_DanhSachNgungHocInfo.cs" />
+    <Compile Include="KQHT_DiemDanhInfo.cs" />
+    <Compile Include="KQHT_DiemDanh_ChiTietInfo.cs" />
+    <Compile Include="KQHT_DiemMonThiTotNghiepInfo.cs" />
+    <Compile Include="KQHT_DiemThanhPhanInfo.cs" />
+    <Compile Include="KQHT_DiemThiInfo.cs" />
+    <Compile Include="KQHT_DiemTongKetHocKyInfo.cs" />
+    <Compile Include="KQHT_DiemTongKetMonInfo.cs" />
+    <Compile Include="KQHT_DiemTongKetToanKhoaInfo.cs" />
+    <Compile Include="KQHT_HoiDongMonInfo.cs" />
+    <Compile Include="KQHT_HoiDongMon_ChiTietInfo.cs" />
+    <Compile Include="KQHT_HoiDongMon_DiemInfo.cs" />
+    <Compile Include="KQHT_HoiDongMon_SinhVienInfo.cs" />
+    <Compile Include="KQHT_LopHocLaiInfo.cs" />
+    <Compile Include="KQHT_MonHoc_CT_KhoiKienThucInfo.cs" />
+    <Compile Include="KQHT_MonThiTotNghiepInfo.cs" />
+    <Compile Include="KQHT_MonThiTotNghiep_LopInfo.cs" />
+    <Compile Include="KQHT_QuyCheInfo.cs" />
+    <Compile Include="KQHT_QuyChe_ThamSoQuyCheInfo.cs" />
+    <Compile Include="KQHT_QuyetDinhTotNghiepInfo.cs" />
+    <Compile Include="KQHT_QuyetDinhTotNghiep_SinhVienInfo.cs" />
+    <Compile Include="KQHT_ThamSoQuyCheInfo.cs" />
+    <Compile Include="KQHT_ThanhPhanDiemBatBuocInfo.cs" />
+    <Compile Include="KQHT_ThanhPhanDiemInfo.cs" />
+    <Compile Include="KQHT_ToChucThiInfo.cs" />
+    <Compile Include="KQHT_XepLoaiMonHocInfo.cs" />
+    <Compile Include="KQHT_XepLoaiTotNghiepInfo.cs" />
+    <Compile Include="HT_ReportInfo.cs" />
+    <Compile Include="Model\UnimOs.cs">
+      <DependentUpon>UnimOs.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UnimOs.designer.cs">
+      <DependentUpon>UnimOs.dbml</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="NS_DonViInfo.cs" />
+    <Compile Include="NS_GiaoVienInfo.cs" />
+    <Compile Include="NS_GiaoVien_HDLDInfo.cs" />
+    <Compile Include="NS_GiaoVien_NghiViecInfo.cs" />
+    <Compile Include="NS_GiaoVien_NgoaiNguInfo.cs" />
+    <Compile Include="NS_GiaoVien_QuanHeGiaDinhInfo.cs" />
+    <Compile Include="NS_GiaoVien_ThongTinInfo.cs" />
+    <Compile Include="NS_LinhVucCongTacInfo.cs" />
+    <Compile Include="NS_LoaiLuanChuyenInfo.cs" />
+    <Compile Include="NS_LoaiPhuCapInfo.cs" />
+    <Compile Include="NS_LuongCoBanInfo.cs" />
+    <Compile Include="NS_LuongCuInfo.cs" />
+    <Compile Include="NS_LuongInfo.cs" />
+    <Compile Include="NS_NgachCongChucInfo.cs" />
+    <Compile Include="NS_NhomNgachInfo.cs" />
+    <Compile Include="NS_PhuCapInfo.cs" />
+    <Compile Include="NS_QuaTrinhBoiDuongInfo.cs" />
+    <Compile Include="NS_QuaTrinhBoNhiemChucVuInfo.cs" />
+    <Compile Include="NS_QuaTrinhCongTacInfo.cs" />
+    <Compile Include="NS_QuaTrinhKhenThuongInfo.cs" />
+    <Compile Include="NS_QuaTrinhKyLuatInfo.cs" />
+    <Compile Include="NS_QuaTrinhLuanChuyenInfo.cs" />
+    <Compile Include="NS_QuaTrinhMienNhiemTuChucInfo.cs" />
+    <Compile Include="NS_QuaTrinhThamGiaLucLuongVuTrangInfo.cs" />
+    <Compile Include="NS_QuaTrinhThamGiaToChucCTXHInfo.cs" />
+    <Compile Include="NS_SoQuyetDinhInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ReportInfo.cs" />
+    <Compile Include="SV_AnhXaMonInfo.cs" />
+    <Compile Include="SV_DiemRenLuyenInfo.cs" />
+    <Compile Include="SV_DiemRenLuyenTheoThangInfo.cs" />
+    <Compile Include="SV_DiemRenLuyenToanKhoaInfo.cs" />
+    <Compile Include="SV_DoiTuongMienGiamInfo.cs" />
+    <Compile Include="SV_DoiTuongTroCapInfo.cs" />
+    <Compile Include="SV_NhapHocLaiInfo.cs" />
+    <Compile Include="SV_QuyetDinhKhenThuongInfo.cs" />
+    <Compile Include="SV_QuyetDinhKyLuatInfo.cs" />
+    <Compile Include="SV_SinhVienInfo.cs" />
+    <Compile Include="SV_SinhVienNhapTruongInfo.cs" />
+    <Compile Include="SV_SinhVien_GiayToNhapTruongInfo.cs" />
+    <Compile Include="SV_SinhVien_KhenThuongInfo.cs" />
+    <Compile Include="SV_SinhVien_KyLuatInfo.cs" />
+    <Compile Include="SV_SinhVien_LopInfo.cs" />
+    <Compile Include="SV_SinhVien_QuanHeGiaDinhInfo.cs" />
+    <Compile Include="SV_SinhVien_ThongTinKhacInfo.cs" />
+    <Compile Include="SV_ThangRenLuyenTrongKyInfo.cs" />
+    <Compile Include="TC_BienLaiThuTienInfo.cs" />
+    <Compile Include="TC_BienLaiThuTien_ChiTietInfo.cs" />
+    <Compile Include="TC_DanhSachHocBongInfo.cs" />
+    <Compile Include="TC_DanhSachHocBong_ChiTietInfo.cs" />
+    <Compile Include="TC_DanhSachMienGiamInfo.cs" />
+    <Compile Include="TC_DanhSachMienGiam_ChiTietInfo.cs" />
+    <Compile Include="TC_DanhSachTroCapInfo.cs" />
+    <Compile Include="TC_DanhSachTroCap_ChiTietInfo.cs" />
+    <Compile Include="TC_DinhMucThuSinhVienInfo.cs" />
+    <Compile Include="TC_DinhMucThuSinhVien_ChiTietInfo.cs" />
+    <Compile Include="TC_LoaiHocBongInfo.cs" />
+    <Compile Include="TC_LoaiThuChiInfo.cs" />
+    <Compile Include="TC_PhanBoQuyHocBongInfo.cs" />
+    <Compile Include="TC_QuyenHoaDonInfo.cs" />
+    <Compile Include="TC_QuyenHoaDon_TrinhDoInfo.cs" />
+    <Compile Include="TC_QuyHocBongInfo.cs" />
+    <Compile Include="XL_KeHoachThucHanhChiTietInfo.cs" />
+    <Compile Include="XL_KeHoachThucHanhInfo.cs" />
+    <Compile Include="XL_KeHoachThucHanhKyHieuInfo.cs" />
+    <Compile Include="XL_TietNghiCoDinhLopInfo.cs" />
+    <Compile Include="XL_TKBInfo.cs" />
+    <Compile Include="XL_SuKienKhacLopInfo.cs" />
+    <Compile Include="SV_Lop_GiaoVienChuNhiemInfo.cs" />
+    <Compile Include="XL_BaoBanGiaoVienInfo.cs" />
+    <Compile Include="XL_BaoBanPhongHocInfo.cs" />
+    <Compile Include="XL_GiaoVienXepTKBInfo.cs" />
+    <Compile Include="XL_GiaoVien_MonHocInfo.cs" />
+    <Compile Include="XL_KeHoachChiTietInfo.cs" />
+    <Compile Include="XL_KeHoachKhacInfo.cs" />
+    <Compile Include="XL_KeHoachTruongInfo.cs" />
+    <Compile Include="XL_LopTachGopInfo.cs" />
+    <Compile Include="XL_LopTachGop_MonHocInfo.cs" />
+    <Compile Include="XL_MonHocTrongKyInfo.cs" />
+    <Compile Include="XL_NgayNghiToanTruongInfo.cs" />
+    <Compile Include="XL_PhanCongGiaoVienInfo.cs" />
+    <Compile Include="XL_PhongHocXepTKBInfo.cs" />
+    <Compile Include="XL_PhongHoc_MonHocInfo.cs" />
+    <Compile Include="XL_SuKienTKBInfo.cs" />
+    <Compile Include="XL_ThuocTinhMonHocInfo.cs" />
+    <Compile Include="XL_TuanInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Model\UnimOs.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>UnimOs.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Model\UnimOs.dbml.layout">
+      <DependentUpon>UnimOs.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
